@@ -3,3 +3,4 @@
   I showed the skills I had back then in HTML and CSS by making a flip card, adding some styling and clickable links. 
 
 ## View the page live
+ https://application-code.netlify.app/
