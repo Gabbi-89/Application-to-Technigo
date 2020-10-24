@@ -1,0 +1,139 @@
+body { /* Huvudstyling för sidan */
+  font-family: 'Jost', sans-serif;
+  line-height: 1.5;
+  color: #c92a47;
+  background-color: hsl(348, 76%, 87%);
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Styling of h1 element */
+h1 {
+  padding-top: 15px;
+  padding-left: 20px;
+  text-shadow: 0px 0.5px 1px rgba(0,0,0,0.9);
+}
+
+/* Styling of h2 element */
+h2 {
+  padding-left: 20px;
+}
+
+/* Styling of paragraph */
+p {
+  padding-left: 20px;
+}
+
+/* Styling of list */
+ul {
+ list-style-type: none;
+ line-height: 1.8;
+}
+
+/* Styling of bottom text on front */
+h6 {
+  padding-left: 405px;
+  padding-bottom: 25px;
+  margin: 0 0 20px 0;
+  color: #332d2e;
+}
+
+.arrow {
+  border: solid #332d2e;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Styling of the box & the flip-card*/
+
+/* Front */
+.flip-card-front { 
+  background-image: linear-gradient(to bottom right, #e697a6, #e899c9);
+  margin:auto;
+  width: 560px; 
+  height: 690px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+  padding-right: 20px;
+  outline: 6px dotted black;
+  outline-offset: 40px;
+}
+
+/* Back */
+.flip-card-back {
+  background-image: linear-gradient(to bottom right, #e697a6, #e899c9);
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+  margin: auto;
+  width: 560px; 
+  height: 600px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+  outline: 6px dotted black;
+  outline-offset: 40px;
+}
+
+.thanks-box {
+  padding-top: 245px;
+  font-size: x-large;
+}
+
+/* Flip & animation */
+.flip-card {
+  background-color: transparent;
+  width: 560px;
+  height: 600px;
+  perspective: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 2.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling of the references */
+.References {
+  margin-top: 100px;
+  text-align: center;
+  padding: 5px;
+}
+  
+/* Styling of links */
+a:link {
+  color:#cf5168;
+  text-decoration: none;
+}
+  
+a:visited {
+  color: #cf5168;
+  text-decoration: none;
+}
+  
+a:hover {
+  color:  hotpink;
+  text-decoration: underline;
+}
